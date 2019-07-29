@@ -1,0 +1,119 @@
+ <!doctype html>
+<html>
+<head>
+	<title>Analysis of Global Data</title>
+	<link rel="stylesheet" type="text/css" href="style_project2.css" />
+
+</head>
+<body>
+	<div id="main">
+		<div id="header" style="width: 90%;">
+			<div id="pictureHome"></div>
+			<div id="pictureText">
+				AN ANALYSIS OF GLOBAL DATA <span style="font-size: 75%"><br> UNDERSTANDING THE DATASET</span>
+			</div>
+			<div id="navbar">
+				<div id="nav">
+					<ul>
+						<li class="selected"><a href="index.html">Home</a></li>
+						<li><a href="educationHealthMil.html">Education/Health and Military</a></li>
+						<li><a href="educationGDP.html">Education per Capita</a></li>
+						<li><a href="healthcareGDP.html">Healthcare per Capita</a></li>
+						<li><a href="militaryGDP.html">Military per Capita</a></li>
+						<li><a href="healthcareGrowth.html">Healthcare Growth</a></li>
+						<li><a href="educationGrowth.html">Education Growth</a></li>
+					</ul>
+				</div>
+			</div>
+		</div><!--header-->
+		<div id="siteContents">
+			<div id="welcome">
+				<div id="welcomecontent" style="padding: 20px 0 0 25px;">
+					<h1 style="text-align: center; margin: 0 0 0 75%; font-size: 3em;"> Welcome! </h1><br><br>
+						<p> This website and the accompanying charts will be used to explore various expendatures for 17 of the largest economies in the world</p>
+						<p> Hopefully, the findings on the following tabs will illuminate just how much the world can change over the course of a few years </p>
+					<h2> Data Sources </h2>	
+						<p>The data is all gathered courtesy of the World Bank. Please follow <a href="https://www.worldbank.org/">this link</a> to go to their main website, or see the list below to go directly to the data sources used in the following visualizations, as well as the workbook from which the charts are generated:</p>
+						<ul>
+							<li><a href="https://data.worldbank.org/indicator/ny.gdp.mktp.cd">GDP</a></li>
+							<li><a href="https://data.worldbank.org/indicator/MS.MIL.XPND.CD">Military Spending</a></li>
+							<li><a href="https://data.worldbank.org/topic/education">Educational Spending</a></li>
+							<li><a href="https://data.worldbank.org/indicator/SH.XPD.CHEX.GD.ZS">Healthcare Spending
+							<li><a href="https://data.worldbank.org/indicator/SP.POP.TOTL">Population Figures</a></li>
+							<li><a href="https://docs.google.com/spreadsheets/d/1tvEVd21-D0GoTtNfIJMretG7ta_lurB1rIm-VWaTU3E/edit?ouid=108466384830167147365&usp=sheets_home&ths=true">Google Spreadsheet</a></li>
+						</ul> <!-- data links-->
+					<div id="dataNotes">			
+					<h2> Notes About The Data </h2>	
+						<p>The data being looked at is from 2010-2014/2015. The reason for this is that more recent years (e.g. 2016+) do not have enough data to reliably produce charts for specific metrics, such as Education and Healthcare expenditures. Unfortunately, even when reducing the data to these few years, there are several missing values from the dataset that will be excluded on the following pages. The total number of blanks are as follows:</p>
+						<table style='width: 50%'>
+							<tr>
+								<th>Metric</th>
+								<th>2010</th>
+								<th>2011</th>
+								<th>2012</th>
+								<th>2013</th>
+								<th>2014</th>
+							</tr>
+							<tr>
+								<td>GDP</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td>Education</td>
+								<td style="color: red; font-weight: bold;">6</td>
+								<td style="color: red; font-weight: bold;">5</td>
+								<td style="color: red; font-weight: bold;">4</td>
+								<td style="color: red; font-weight: bold;">4</td>
+								<td style="color: red; font-weight: bold;">5</td>
+							</tr>
+							<tr>
+								<td>Military</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td>Health</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td>Population</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+							</tr>
+						</table>
+					</div><!--dataNotes-->	
+				</div><!--welcomecontent-->
+				<div id="welcomeImage"> 
+				</div> <!--welcomeImage-->
+			</div><!--welcome-->
+		</div><!--site contents-->
+		<div id="letsStart" style="background: #eee;">
+			<button id="go" onclick="location.href='educationHealthMil.html';">Let's get started</button>
+		</div>
+		<div id="copywrite">
+			COPYWRITE &copy; 
+			<script>
+			var d = new Date(); document.write(d.getFullYear());
+			</script> |
+			<a href="http://validator.w3.org/check?uri=referer">HTML5</a> |
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>
+		</div><!--footer-->
+		
+	</div><!--main-->
+</body>
+</html>
+ 

@@ -1,0 +1,53 @@
+ <!doctype html>
+<html>
+<head>
+	<title>Analysis of Global Data</title>
+	<link rel="stylesheet" type="text/css" href="style_project2.css" />
+	<script src="http://www.gstatic.com/charts/loader.js"></script>	
+	<script src="chart_js.js"></script>
+	<script>
+	google.charts.load('current', {'packages':['corechart']});
+	
+	//set a callback to run when the Google Vis API is loaded
+	google.charts.setOnLoadCallback(writeCharts);	
+	</script>
+</head>
+<body>
+	<div id="main">
+		<div id="header" style="width:900px;">
+			<div id="pictureHltGrow"></div>
+			<div id="pictureText">
+				HEALTHCARE SPENDING <span style="font-size: 75%"><br> GROWTH OVER TIME</span>
+			</div>
+			<div id="navbar">
+				<div id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="educationHealthMil.html">Education/Health and Military</a></li>
+						<li><a href="educationGDP.html">Education per Capita</a></li>
+						<li><a href="healthcareGDP.html">Healthcare per Capita</a></li>
+						<li><a href="militaryGDP.html">Military per Capita</a></li>
+						<li class="selected"><a href="healthcareGrowth.html">Healthcare Growth</a></li>
+						<li><a href="educationGrowth.html">Education Growth</a></li>
+					</ul>
+				</div>
+			</div>
+		</div><!--header-->
+		<div id="siteContents">
+			<h1 style="text-align: center; padding: 100px 0 0 0;">Change in Healthcare Spending in % GDP Spending and Millions of Dollars</h1>
+				<div id="health_rel" style="height:500px; width: 700px;padding: 0;"></div><br>
+				<div id="health_abs" style="height:500px; width: 700px;padding: 0;"></div><br>
+		</div><!--site contents-->
+		<div id="copywrite">
+			COPYWRITE &copy; 
+			<script>
+			var d = new Date(); document.write(d.getFullYear());
+			</script> |
+			<a href="http://validator.w3.org/check?uri=referer">HTML5</a> |
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>
+		</div><!--footer-->
+		
+	</div><!--main-->
+</body>
+</html>
+ 
